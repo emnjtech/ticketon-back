@@ -135,7 +135,7 @@ app.post('/generateTickets', async (req, res) => {
 
 
 
-
-app.listen(3003, () => {
-    console.log("Sever started, Server running")
+const port = process.env.PORT 
+app.listen(port, () => {
+    console.log(`Sever started, Server running on port ${port}`)
 })
