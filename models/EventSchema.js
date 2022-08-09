@@ -26,7 +26,7 @@ const eventSchema = mongoose.Schema({
 
     },
     priceLevels: {
-        price1: { type: Number, default:0, required:false}, 
+        price1: { type: Number, required:false}, 
         price2: {type: Number,required: false},
         price3: {type: Number,required: false},
         price4: {type: Number,required: false},
