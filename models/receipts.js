@@ -14,6 +14,7 @@ const ticketsSchema = mongoose.Schema({
     country: { type: String, required: true },
     province: { type: String, required: true },
     dateAndTime: { type: Date, required: true },
+    dateBooked: { type: Date, required: true },
 
 })
 

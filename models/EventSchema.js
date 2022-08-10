@@ -8,7 +8,7 @@ const eventSchema = mongoose.Schema({
     image: { type: String, required: true },
     description: { type: String, required: false },
     alt: {type: String, required: true},
-    ticketFrom: { type: Number, default: 0, required: false},
+    ticketFrom: { type: Number, default:0, required: false},
     venue: { type: String, required: true },
     category: { type: String, required: true },
     town: { type: String, required: true},
@@ -18,7 +18,7 @@ const eventSchema = mongoose.Schema({
     dateCreated: { type: Date, required:true},
     totalTicketsRemaining: {type: Number,required: false}, 
     ticketLevels: {
-        ticket1: { type: String, default: 'Free', required: false},
+        ticket1: { type: String, default:"Free", required: false},
         ticket2: {type: String,required: false},
         ticket3: {type: String,required: false}, 
         ticket4: {type: String,required: false},
@@ -26,7 +26,7 @@ const eventSchema = mongoose.Schema({
 
     },
     priceLevels: {
-        price1: { type: Number, required:false}, 
+        price1: { type: Number, default:0, required:false}, 
         price2: {type: Number,required: false},
         price3: {type: Number,required: false},
         price4: {type: Number,required: false},

@@ -16,7 +16,7 @@ app.use(cors())
 app.get('/', (req,res) => {
     res.send("<h3 align='center'>Ticket server running on this port</h3>")
 })
-
+const sort = { dateCreated: -1 }
 app.get("/allEvents", (req, res) => {
     eventModel.find({}, (err, result) => {
         if (err) {
@@ -24,8 +24,9 @@ app.get("/allEvents", (req, res) => {
         }
         else {
             res.json(result)
+            console.log(result)
         }
-    })
+    }).sort(sort)
 })
 
 app.get("/savedEvents", (req, res) => {
