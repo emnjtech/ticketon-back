@@ -18,7 +18,7 @@ const eventSchema = mongoose.Schema({
     dateCreated: { type: Date, required:true},
     totalTicketsRemaining: {type: Number,required: false}, 
     ticketLevels: {
-        ticket1: { type: String, default:"Free", required: false},
+        ticket1: { type: String, default:"Regular", required: false},
         ticket2: {type: String,required: false},
         ticket3: {type: String,required: false}, 
         ticket4: {type: String,required: false},
